@@ -75,7 +75,7 @@ const App = () => {
 
           <input type="text" name='username' onChange={handleInput} />
 
-          {formerror.username && <p className='username-error'>{formerror.username}</p>}
+          {formerror.username !== '' && <p className='username-error'>{formerror.username}</p>}
 
           <label>Email</label>
 
