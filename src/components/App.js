@@ -87,13 +87,13 @@ const App = () => {
 
           <input type="password" name='password' onChange={handleInput} />
 
-          {password - error && <p className='password-error'>{formerror.password}</p>}
+          {formerror.password && <p className='password-error'>{formerror.password}</p>}
 
           <label>Contact Number</label>
 
           <input type="text" name='contactNo' onChange={handleInput} />
 
-          {contactNo - error && <p className='contactNo-error'>{formerror.contactNo}</p>}
+          {formerror.contactNo && <p className='contactNo-error'>{formerror.contactNo}</p>}
 
           <button type='submit' onClick={handlesubmit}>Submit</button>
 
