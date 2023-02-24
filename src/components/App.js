@@ -72,16 +72,16 @@ const App = () => {
         <section>
           <label>Username</label>
           <input type="text" name='username' onChange={handleInput} />
-          {<p className='username-error'>{formerror.username}</p>}
+          <p className='username-error'>{formerror.username}</p>
           <label>Email</label>
           <input type="email" name='email' onChange={handleInput} />
-          {<p className='email-error'>{formerror.email}</p>}
+          <p className='email-error'>{formerror.email}</p>
           <label>Password</label>
           <input type="password" name='password' onChange={handleInput} />
-          {<p className='password-error'>{formerror.password}</p>}
+          <p className='password-error'>{formerror.password}</p>
           <label>Contact Number</label>
           <input type="number" name='contactNo' onChange={handleInput} />
-          {<p className='contactNo-error'>{formerror.contactNo}</p>}
+          <p className='contactNo-error'>{formerror.contactNo}</p>
           <button type='submit' onClick={handlesubmit}>Submit</button>
         </section>
       </form>
