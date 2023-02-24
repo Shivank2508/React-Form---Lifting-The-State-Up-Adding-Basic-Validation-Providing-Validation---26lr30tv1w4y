@@ -70,19 +70,33 @@ const App = () => {
       <form>
         <h1>Registeration Form</h1>
         <section>
+
           <label>Username</label>
+
           <input type="text" name='username' onChange={handleInput} />
-          <p className='username-error'>{formerror.username}</p>
+
+          {formerror.username && <p className='username-error'>{formerror.username}</p>}
+
           <label>Email</label>
+
           <input type="email" name='email' onChange={handleInput} />
-          <p className='email-error'>{formerror.email}</p>
+
+          {formerror.email && <p className='email-error'>{formerror.email}</p>}
+
           <label>Password</label>
+
           <input type="password" name='password' onChange={handleInput} />
-          <p className='password-error'>{formerror.password}</p>
+
+          {password - error && <p className='password-error'>{formerror.password}</p>}
+
           <label>Contact Number</label>
-          <input type="number" name='contactNo' onChange={handleInput} />
-          <p className='contactNo-error'>{formerror.contactNo}</p>
+
+          <input type="text" name='contactNo' onChange={handleInput} />
+
+          {contactNo - error && <p className='contactNo-error'>{formerror.contactNo}</p>}
+
           <button type='submit' onClick={handlesubmit}>Submit</button>
+
         </section>
       </form>
     </div >
