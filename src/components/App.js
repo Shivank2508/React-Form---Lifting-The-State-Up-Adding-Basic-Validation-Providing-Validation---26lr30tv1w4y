@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/App.css';
 
 const App = () => {
+
   const formobj = {
     username: '',
     email: '',
@@ -24,7 +25,8 @@ const App = () => {
 
     const ret = validation();
     if (ret) {
-      setStatus(true)
+      setStatus(true);
+      setFormInput(formobj);
     }
   }
 
@@ -85,7 +87,7 @@ const App = () => {
           <button onClick={handlesubmit}>Submit</button>
         </section>
       </form>
-    </div >
+    </div>
   )
 }
 
